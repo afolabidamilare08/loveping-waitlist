@@ -61,7 +61,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#02231A] flex flex-col">
+    <div className="h-screen bg-[#02231A] flex flex-col overflow-hidden">
       <div
         className="header flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
         style={{
@@ -72,7 +72,7 @@ const App = () => {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center">
-        <div className="content px-4 py-6 md:py-12 max-w-[697px] mx-auto flex-1 flex items-center justify-center">
+        <div className="content px-4 py-6 md:py-12 lg:py-16 mx-auto grow flex-1 flex flex-col items-center justify-center">
           <motion.div
             className="space-y-6"
             variants={containerVariants}
@@ -160,7 +160,6 @@ const App = () => {
             </motion.form>
           </motion.div>
         </div>
-
         <motion.div
           className="hero-image-content"
           initial={{ opacity: 0, y: 30 }}
@@ -172,7 +171,7 @@ const App = () => {
           }}
         >
           <motion.div
-            className="flex items-center gap-4 [&>*:nth-child(even)]:mt-[66px]"
+            className="flex items-center gap-4 [&>*:nth-child(even)]:mt-[120px]"
             animate={{
               x: ["0%", "-50%"],
             }}
