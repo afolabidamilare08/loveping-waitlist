@@ -215,8 +215,8 @@ const MarqueImage = ({ image, index }: { image: string, index: number }) => {
       transition={{ duration: 0.3 }}
     >
       <img
-        // src={image}
-        className=""
+        src={image}
+        className="hidden"
         loading="lazy"
       />
     </motion.div>
