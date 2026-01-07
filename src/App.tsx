@@ -189,14 +189,12 @@ const App = () => {
               <MarqueImage
                 key={index}
                 image={image}
-                index={index}
               />
             ))}
             {marqueeImages.map((image, index) => (
               <MarqueImage
                 key={index}
                 image={image}
-                index={index}
               />
             ))}
           </motion.div>
@@ -207,7 +205,7 @@ const App = () => {
 }
 
 
-const MarqueImage = ({ image, index }: { image: string, index: number }) => {
+const MarqueImage = ({ image }: { image: string }) => {
   return (
     <motion.div
       className={`w-[238px] h-[259px] md:min-w-[337px] md:min-h-[336px]`}
