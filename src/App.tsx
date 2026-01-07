@@ -179,7 +179,7 @@ const App = () => {
             transition={{
               x: {
                 repeat: Infinity,
-                // repeatType: "loop",
+                repeatType: "loop",
                 duration: 50,
                 ease: "linear",
               },
