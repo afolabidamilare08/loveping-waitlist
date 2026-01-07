@@ -90,7 +90,7 @@ const App = () => {
             </motion.div>
 
             <motion.div className="" variants={itemVariants}>
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-2 md:gap-3">
                 <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
                   Never miss the right
                 </h1>
