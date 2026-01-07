@@ -65,7 +65,7 @@ const App = () => {
       <div
         className="header flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
         style={{
-          borderWidth: "0.5px"
+          borderBottomWidth: "0.5px"
         }}
       >
         <img src="/images/Logo.svg" alt="Loveping" />
