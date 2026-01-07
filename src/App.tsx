@@ -68,7 +68,7 @@ const App = () => {
           borderBottomWidth: "0.5px"
         }}
       >
-        <img src="/images/Logo.svg" alt="Loveping" />
+        <img src="/images/Logo.svg" alt="Loveping" loading="lazy" />
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center">
