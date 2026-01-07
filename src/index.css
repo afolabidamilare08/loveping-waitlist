@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+*, html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #02231A;
+  font-family: "Inter", sans-serif;
+}
+
+
+.header {
+  backdrop-filter: blur(50px)
+}
+
+
+/* Tailwind CSS v4 Theme Configuration */
+@theme {
+  /* Custom primary color - use with bg-primary, text-primary, border-primary, etc. */
+  --color-primary: #48D962;
+  --color-primary-1A: #48D9621A;
+  --color-secondary: #02231A;
+
+  --color-purple: #A561FF;
+  --color-purple-1A: #A561FF1A;
+
+  --color-yellow: #D7BA38;
+  --color-yellow-1A: #D7BA381A ;
+
+  --color-blue: #3BD1DC;
+  --color-blue-1A: #3BD1DC1A;
+
+  --color-green: #04281C;
+
+  /* Custom font families - use with font-grandstander and font-fredoka */
+  /* Available weights: Grandstander (600, 700), Fredoka Expanded (300, 500) */
+  --font-grandstander: 'Grandstander', sans-serif;
+  --font-fredoka: 'FredokaRegular', sans-serif;
+}
