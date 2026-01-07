@@ -63,7 +63,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-[#02231A] flex flex-col">
       <div
-        className="header flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-8"
+        className="header flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
         style={{
           borderWidth: "0.5px"
         }}
@@ -72,7 +72,7 @@ const App = () => {
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center">
-        <div className="content px-4 py-[64px] max-w-[697px] mx-auto flex-1 flex items-center justify-center">
+        <div className="content px-4 py-6 md:py-12 max-w-[697px] mx-auto flex-1 flex items-center justify-center">
           <motion.div
             className="space-y-6"
             variants={containerVariants}
@@ -91,7 +91,7 @@ const App = () => {
 
             <motion.div className="" variants={itemVariants}>
               <div className="flex items-center justify-center gap-4">
-                <h1 className="text-white text-lg md:text-2xl lg:text-[50px] font-semibold">
+                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
                   Never miss the right
                 </h1>
 
@@ -104,7 +104,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center gap-3">
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
                 <div className="moment-mask bg-primary rounded-sm px-1.5 md:px-3">
                   <h1 className="text-secondary text-lg md:text-2xl lg:text-[50px] font-semibold">
                     moment
@@ -125,7 +125,7 @@ const App = () => {
                   />
                 </div>
 
-                <h1 className="text-white text-lg md:text-2xl lg:text-[50px] font-semibold">
+                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
                   to show love.
                 </h1>
               </div>
