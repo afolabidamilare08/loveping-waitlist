@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
-*, html, body {
+*,
+html,
+body {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #02231A;
   font-family: "Inter", sans-serif;
+}
+
+div::-webkit-scrollbar {
+  display: none;
 }
 
 
@@ -27,7 +33,7 @@ body {
   --color-purple-1A: #A561FF1A;
 
   --color-yellow: #D7BA38;
-  --color-yellow-1A: #D7BA381A ;
+  --color-yellow-1A: #D7BA381A;
 
   --color-blue: #3BD1DC;
   --color-blue-1A: #3BD1DC1A;
