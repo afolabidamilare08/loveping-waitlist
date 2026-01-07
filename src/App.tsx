@@ -132,7 +132,7 @@ const App = () => {
             </motion.div>
 
             <motion.p
-              className="text-sm lg:text-base font-normal text-[#909090] leading-[24px] text-center max-w-lg mx-auto"
+              className="text-sm lg:text-base font-normal text-[#909090] leading-[21px] text-center max-w-lg mx-auto"
               style={{
                 letterSpacing: "-2%",
               }}
@@ -210,13 +210,13 @@ const App = () => {
 const MarqueImage = ({ image, index }: { image: string, index: number }) => {
   return (
     <motion.div
-      className={`bg-[#04281C] rounded-[20px] w-[238px] h-[259px] md:min-w-[337px] md:min-h-[336px] flex flex-col justify-end marque-${index + 1}`}
+      className={`w-[238px] h-[259px] md:min-w-[337px] md:min-h-[336px]`}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
     >
       <img
         src={image}
-        className="hidden"
+        className=""
         loading="lazy"
       />
     </motion.div>
