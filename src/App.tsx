@@ -61,18 +61,23 @@ const App = () => {
   };
 
   return (
-    <div className="h-screen bg-[#02231A] flex flex-col overflow-hidden">
+    <div className="h-screen bg-[#02231A] flex flex-col justify-between overflow-hidden">
       <div
-        className="header flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
+        className="header w-full flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
         style={{
           borderBottomWidth: "0.5px"
         }}
       >
-        <img src="/images/Logo.svg" alt="Loveping" loading="lazy" />
+        <img
+          src="/images/Logo.svg"
+          alt="Loveping"
+          loading="lazy"
+          className="h-4 md:h-auto"
+        />
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center">
-        <div className="content px-4 py-6 md:py-12 lg:py-16 mx-auto grow flex-1 flex flex-col items-center justify-center">
+      <div className="w-full h-full flex-1 grow relative py-8 lg:pt-12">
+        <div className="px-4 h-full flex items-center justify-center">
           <motion.div
             className="space-y-6"
             variants={containerVariants}
@@ -91,7 +96,7 @@ const App = () => {
 
             <motion.div className="" variants={itemVariants}>
               <div className="flex items-center justify-center gap-2 md:gap-3">
-                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
+                <h1 className="text-white text-2xl md:text-2xl lg:text-[50px] font-semibold">
                   Never miss the right
                 </h1>
 
@@ -104,9 +109,9 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center gap-2 sm:gap-3">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
                 <div className="moment-mask bg-primary rounded-sm px-1.5 md:px-3">
-                  <h1 className="text-secondary text-lg md:text-2xl lg:text-[50px] font-semibold">
+                  <h1 className="text-secondary text-2xl md:text-2xl lg:text-[50px] font-semibold">
                     moment
                   </h1>
                 </div>
@@ -125,7 +130,7 @@ const App = () => {
                   />
                 </div>
 
-                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
+                <h1 className="text-white text-2xl md:text-2xl lg:text-[50px] font-semibold whitespace-nowrap">
                   to show love.
                 </h1>
               </div>
@@ -160,6 +165,10 @@ const App = () => {
             </motion.form>
           </motion.div>
         </div>
+      </div>
+      {/* <div className="flex-1 grow flex flex-col items-center justify-center">
+      </div> */}
+      <div className="relative xl:top-[66px] h-fit">
         <motion.div
           className="hero-image-content"
           initial={{ opacity: 0, y: 30 }}
@@ -171,7 +180,7 @@ const App = () => {
           }}
         >
           <motion.div
-            className="flex items-center gap-4 [&>*:nth-child(even)]:mt-[120px]"
+            className="flex items-center gap-4 [&>*:nth-child(even)]:mt-[100px]"
             animate={{
               x: ["0%", "-50%"],
             }}
