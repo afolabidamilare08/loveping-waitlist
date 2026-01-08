@@ -95,11 +95,11 @@ const App = () => {
                   Never miss the right
                 </h1>
 
-                <div className={`w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
+                <div className={`group w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
                   <img
                     src={icons[1].icon}
                     alt={icons[1].title}
-                    className="size-4 lg:size-6 lg:hover:rotate-[15deg] transition-all duration-300"
+                    className="size-4 lg:size-6 lg:group-hover:rotate-[15deg] transition-all duration-300"
                   />
                 </div>
               </div>
@@ -110,18 +110,18 @@ const App = () => {
                     moment
                   </h1>
                 </div>
-                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
+                <div className={`group min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
                   <img
                     src={icons[0].icon}
                     alt={icons[0].title}
-                    className="size-4 lg:size-6 lg:hover:rotate-[-15deg] transition-all duration-300"
+                    className="size-4 lg:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
-                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
+                <div className={`group min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
                   <img
                     src={icons[2].icon}
                     alt={icons[2].title}
-                    className="size-4 lg:size-6 lg:hover:rotate-[-15deg] transition-all duration-300"
+                    className="size-4 lg:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
 
