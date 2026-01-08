@@ -144,7 +144,7 @@ const App = () => {
             <motion.form className="" variants={itemVariants}>
               <div className="flex flex-col lg:flex-row items-center max-w-[410px] mx-auto gap-2">
                 <input
-                  className="max-w-[269px] lg:w-full h-10 px-6 border border-primary-1A text-white rounded-full text-sm font-normal"
+                  className="max-w-[269px] lg:w-full h-10 px-4 border border-primary-1A text-white rounded-full text-sm font-normal"
                   placeholder="you@example.com"
                   required
                 />
