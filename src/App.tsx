@@ -91,41 +91,41 @@ const App = () => {
 
             <motion.div className="" variants={itemVariants}>
               <div className="flex items-center justify-center gap-2 md:gap-3">
-                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold">
+                <h1 className="text-white text-xl md:text-[50px] font-semibold">
                   Never miss the right
                 </h1>
 
-                <div className={`group w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
+                <div className={`group w-8 h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
                   <img
                     src={icons[1].icon}
                     alt={icons[1].title}
-                    className="size-4 lg:size-6 lg:group-hover:rotate-[15deg] transition-all duration-300"
+                    className="size-4 md:size-6 lg:group-hover:rotate-[15deg] transition-all duration-300"
                   />
                 </div>
               </div>
 
               <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
                 <div className="moment-mask bg-primary rounded-sm px-1.5 md:px-3">
-                  <h1 className="text-secondary text-xl md:text-2xl lg:text-[50px] font-semibold">
+                  <h1 className="text-secondary text-xl md:text-[50px] font-semibold">
                     moment
                   </h1>
                 </div>
-                <div className={`group min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
+                <div className={`group min-w-8 min-h-8 md:min-w-12 md:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
                   <img
                     src={icons[0].icon}
                     alt={icons[0].title}
-                    className="size-4 lg:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
+                    className="size-4 md:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
-                <div className={`group min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
+                <div className={`group min-w-8 min-h-8 md:min-w-12 md:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
                   <img
                     src={icons[2].icon}
                     alt={icons[2].title}
-                    className="size-4 lg:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
+                    className="size-4 md:size-6 lg:group-hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
 
-                <h1 className="text-white text-xl md:text-2xl lg:text-[50px] font-semibold whitespace-nowrap">
+                <h1 className="text-white text-xl md:text-[50px] font-semibold whitespace-nowrap">
                   to show love.
                 </h1>
               </div>
