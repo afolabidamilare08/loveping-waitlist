@@ -13,6 +13,13 @@
 .moment-mask {
   display: inline-block;
   transform: rotate(2deg);
+  cursor: pointer;
+}
+
+.moment-mask:hover,
+.moment-mask:hover h1 {
+  transform: rotate(0deg);
+  transition: all 200ms ease-in-out;
 }
 
 .moment-mask h1 {
