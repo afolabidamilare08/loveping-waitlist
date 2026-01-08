@@ -77,9 +77,9 @@ const App = () => {
       </div>
 
       <div className="w-full h-full flex-1 grow relative">
-        <div className="px-6 h-full flex items-center justify-center pt-[60px] lg:pt-[90px]">
+        <div className="px-6 h-full flex items-center justify-center pt-[40px] lg:pt-[90px]">
           <motion.div
-            className="space-y-4 lg:space-y-4"
+            className="space-y-4 lg:space-y-6"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -168,7 +168,7 @@ const App = () => {
       </div>
       {/* <div className="flex-1 grow flex flex-col items-center justify-center">
       </div> */}
-      <div className="relative top-[60px] lg:top-[90px] h-fit">
+      <div className="relative top-[40px] lg:top-[90px] h-fit">
         <motion.div
           className="hero-image-content"
           initial={{ opacity: 0, y: 30 }}
