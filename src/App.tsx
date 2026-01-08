@@ -6,22 +6,17 @@ import { FaSmile } from "react-icons/fa";
 const icons = [
   {
     icon: "/icons/message.svg",
-    style: "bg-purple-1A border-purple-1A",
+    style: "bg-purple-1A border-purple-1A lg:hover:shadow-[0px_4px_46px_0px_#A561FF33] transition-shadow duration-300",
     title: "message"
   },
   {
-    icon: "/icons/gem.svg",
-    style: "bg-green border-primary-1A",
-    title: "gem"
-  },
-  {
     icon: "/icons/call.svg",
-    style: "bg-blue-1A border-blue-1A",
+    style: "bg-blue-1A border-blue-1A lg:hover:shadow-[0px_4px_46px_0px_#3BD1DC33] transition-shadow duration-300",
     title: "call"
   },
   {
     icon: "/icons/gift.svg",
-    style: "bg-yellow-1A border-yellow-1A",
+    style: "bg-yellow-1A border-yellow-1A lg:hover:shadow-[0px_4px_46px_0px_#D7BA3833] transition-shadow duration-300",
     title: "gift"
   }
 ]
@@ -100,10 +95,10 @@ const App = () => {
                   Never miss the right
                 </h1>
 
-                <div className={`w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full border ${icons[2].style}`}>
+                <div className={`w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
                   <img
-                    src={icons[2].icon}
-                    alt={icons[2].title}
+                    src={icons[1].icon}
+                    alt={icons[1].title}
                     className="size-4 lg:size-6"
                   />
                 </div>
@@ -115,17 +110,17 @@ const App = () => {
                     moment
                   </h1>
                 </div>
-                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border ${icons[0].style}`}>
+                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
                   <img
                     src={icons[0].icon}
                     alt={icons[0].title}
                     className="size-4 lg:size-6"
                   />
                 </div>
-                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border ${icons[3].style}`}>
+                <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
                   <img
-                    src={icons[3].icon}
-                    alt={icons[3].title}
+                    src={icons[2].icon}
+                    alt={icons[2].title}
                     className="size-4 lg:size-6"
                   />
                 </div>
