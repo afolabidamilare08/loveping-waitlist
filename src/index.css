@@ -7,6 +7,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   background-color: #02231A;
   font-family: "Inter", sans-serif;
