@@ -6,17 +6,17 @@ import { FaSmile } from "react-icons/fa";
 const icons = [
   {
     icon: "/icons/message.svg",
-    style: "bg-purple-1A border-purple-1A lg:hover:shadow-[0px_4px_46px_0px_#A561FF33] transition-shadow duration-300",
+    style: "bg-purple-1A border-purple-1A lg:hover:shadow-[0px_4px_46px_0px_#A561FF33] transition-all duration-300",
     title: "message"
   },
   {
     icon: "/icons/call.svg",
-    style: "bg-blue-1A border-blue-1A lg:hover:shadow-[0px_4px_46px_0px_#3BD1DC33] transition-shadow duration-300",
+    style: "bg-blue-1A border-blue-1A lg:hover:shadow-[0px_4px_46px_0px_#3BD1DC33] transition-all duration-300",
     title: "call"
   },
   {
     icon: "/icons/gift.svg",
-    style: "bg-yellow-1A border-yellow-1A lg:hover:shadow-[0px_4px_46px_0px_#D7BA3833] transition-shadow duration-300",
+    style: "bg-yellow-1A border-yellow-1A lg:hover:shadow-[0px_4px_46px_0px_#D7BA3833] transition-all duration-300",
     title: "gift"
   }
 ]
@@ -99,7 +99,7 @@ const App = () => {
                   <img
                     src={icons[1].icon}
                     alt={icons[1].title}
-                    className="size-4 lg:size-6"
+                    className="size-4 lg:size-6 lg:hover:rotate-[15deg] transition-all duration-300"
                   />
                 </div>
               </div>
@@ -114,14 +114,14 @@ const App = () => {
                   <img
                     src={icons[0].icon}
                     alt={icons[0].title}
-                    className="size-4 lg:size-6"
+                    className="size-4 lg:size-6 lg:hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
                 <div className={`min-w-8 min-h-8 lg:min-w-12 lg:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[2].style}`}>
                   <img
                     src={icons[2].icon}
                     alt={icons[2].title}
-                    className="size-4 lg:size-6"
+                    className="size-4 lg:size-6 lg:hover:rotate-[-15deg] transition-all duration-300"
                   />
                 </div>
 
