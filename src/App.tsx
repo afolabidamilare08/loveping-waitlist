@@ -87,12 +87,12 @@ const App = () => {
 
       const data = await response.json()
       if (data.success) {
-        console.log("error")
+        toast.success("Successfully added to waitlist")
       }
 
     } catch (error) {
       console.error("Error submitting form:", error);
-      toast.error("Something went wrong")
+      toast.error("Failed to add to waitlist - please try again")
     } finally {
       setLoading(false)
     }
@@ -201,7 +201,7 @@ const App = () => {
 
                   <button
                     type="submit"
-                    className="bg-primary text-secondary rounded-full px-6 h-10 flex items-center gap-2 min-w-[133px] justify-center"
+                    className="bg-primary text-secondary rounded-full px-6 h-10 flex items-center gap-2 min-w-[133px] justify-center cursor-pointer"
                   >
                     {loading ? (
                       <LuLoaderCircle className="animate-spin delay-150ms" />
