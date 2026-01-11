@@ -194,7 +194,7 @@ const App = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
-                    className="max-w-[269px] lg:w-full h-10 px-4 border border-primary-1A text-white rounded-full text-sm font-normal"
+                    className="max-w-[269px] lg:w-full h-10 px-4 border border-primary-1A text-white rounded-full text-sm font-normal focus:outline-none focus-visible:ring-primary focus-visible:ring-[1px] transition-all"
                     placeholder="you@example.com"
                     required
                   />
