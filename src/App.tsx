@@ -88,10 +88,13 @@ const App = () => {
       }
 
       const data = await response.json()
-
-      console.log("data: ", data);
       if (data.message) {
-        toast.success(data.message || "Successfully added to waitlist")
+        if(data.is_existing) {
+          toast.repeated(data.message);
+        }
+        else {
+          toast.success(data.message || "Successfully added to waitlist")
+        }
         setEmail("");
       }
 

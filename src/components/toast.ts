@@ -1,4 +1,4 @@
-type ToastType = "success" | "error"
+type ToastType = "success" | "error" | "repeated";
 
 export interface ToastItem {
     id: string
@@ -14,6 +14,9 @@ const notify = () => listeners.forEach((l) => l(toasts))
 export const toast = {
     success(message: string) {
         addToast(message, "success")
+    },
+    repeated(message: string) {
+        addToast(message, "repeated")
     },
     error(message: string) {
         addToast(message, "error")
