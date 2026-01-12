@@ -33,7 +33,8 @@ const heroImages = [
 ];
 
 const marqueeImages = [...heroImages, ...heroImages];
-const BASE_URL = import.meta.env.VITE_BASE_URL
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const token = import.meta.env.VITE_AUTH_TOKEN
 
 const App = () => {
   const containerVariants = {
@@ -76,6 +77,7 @@ const App = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
           },
           body: JSON.stringify({ email }),
         }
@@ -86,8 +88,11 @@ const App = () => {
       }
 
       const data = await response.json()
-      if (data.success) {
-        toast.success("Successfully added to waitlist")
+
+      console.log("data: ", data);
+      if (data.message) {
+        toast.success(data.message || "Successfully added to waitlist")
+        setEmail("");
       }
 
     } catch (error) {
@@ -189,7 +194,7 @@ const App = () => {
               </motion.p>
 
               <motion.form className="" variants={itemVariants} onSubmit={handleSubmit}>
-                <div className="flex flex-col lg:flex-row items-center max-w-[410px] mx-auto gap-2">
+                <div className="flex flex-col md:flex-row items-center max-w-[410px] mx-auto gap-2">
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -201,15 +206,15 @@ const App = () => {
 
                   <button
                     type="submit"
-                    className="bg-primary text-secondary rounded-full px-6 h-10 flex items-center gap-2 min-w-[133px] justify-center cursor-pointer"
+                    className="bg-primary text-secondary rounded-full px-6 h-10 flex items-center min-w-[133px] justify-center cursor-pointer"
                   >
                     {loading ? (
                       <LuLoaderCircle className="animate-spin delay-150ms" />
                     ) : (
-                      <>
+                      <div className="flex items-center gap-2">
                         <span className="whitespace-nowrap text-sm">Join Waitlist</span>
                         <FaSmile />
-                      </>
+                      </div>
                     )}
                   </button>
                 </div>
