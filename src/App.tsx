@@ -83,13 +83,15 @@ const App = () => {
         }
       )
 
-      if (!response.ok) {
-        throw new Error("Request failed")
-      }
+      const data = await response.json();
 
-      const data = await response.json()
+      if (!response.ok && response.status !== 409) {
+        throw new Error(data?.message || "Request failed");
+      }
+      console.log("DATA:", data);
+      // {"message":"This Email is already on our Waitlist","is_existing":true}
       if (data.message) {
-        if(data.is_existing) {
+        if (data.is_existing) {
           toast.repeated(data.message);
         }
         else {
@@ -99,7 +101,6 @@ const App = () => {
       }
 
     } catch (error) {
-      console.error("Error submitting form:", error);
       toast.error("Failed to add to waitlist - please try again")
     } finally {
       setLoading(false)
