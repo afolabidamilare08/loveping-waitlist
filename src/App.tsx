@@ -113,7 +113,7 @@ const App = () => {
     <>
       <Toaster />
       <div className="h-screen bg-[#02231A] flex flex-col justify-between overflow-hidden overflow-y-hidden">
-        <div
+        <header
           className="header w-full flex items-center justify-center bg-[#02231A80] border-b border-[#48D96214] py-4 md:py-8"
           style={{
             borderBottomWidth: "0.5px"
@@ -125,9 +125,9 @@ const App = () => {
             loading="lazy"
             className="h-4 md:h-auto"
           />
-        </div>
+        </header>
 
-        <div className="w-full h-full flex-1 grow relative">
+        <main className="w-full h-full flex-1 grow relative">
           <div className="px-6 h-full flex items-center justify-center pt-[40px]">
             <motion.div
               className="space-y-4 lg:space-y-6"
@@ -135,6 +135,7 @@ const App = () => {
               initial="hidden"
               animate="visible"
             >
+              <h1 className="sr-only">Never miss the right moment to show love.</h1>
               <motion.div
                 className="flex items-center gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full bg-[#04281C] w-fit mx-auto"
                 variants={itemVariants}
@@ -147,9 +148,9 @@ const App = () => {
 
               <motion.div className="" variants={itemVariants}>
                 <div className="flex items-center justify-center gap-2 md:gap-3">
-                  <h1 className="text-white text-xl md:text-[50px] font-semibold">
+                  <span className="text-white text-xl md:text-[50px] font-semibold">
                     Never miss the right
-                  </h1>
+                  </span>
 
                   <div className={`group w-8 h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[1].style}`}>
                     <img
@@ -162,9 +163,9 @@ const App = () => {
 
                 <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
                   <div className="moment-mask bg-primary rounded-sm px-1.5 md:px-3">
-                    <h1 className="text-secondary text-xl md:text-[50px] font-semibold">
+                    <span className="text-secondary text-xl md:text-[50px] font-semibold">
                       moment
-                    </h1>
+                    </span>
                   </div>
                   <div className={`group min-w-8 min-h-8 md:min-w-12 md:min-h-12 flex items-center justify-center rounded-full border-[0.74px] cursor-pointer ${icons[0].style}`}>
                     <img
@@ -181,9 +182,9 @@ const App = () => {
                     />
                   </div>
 
-                  <h1 className="text-white text-xl md:text-[50px] font-semibold whitespace-nowrap">
+                  <span className="text-white text-xl md:text-[50px] font-semibold whitespace-nowrap">
                     to show love.
-                  </h1>
+                  </span>
                 </div>
               </motion.div>
 
@@ -225,7 +226,7 @@ const App = () => {
               </motion.form>
             </motion.div>
           </div>
-        </div>
+        </main>
         {/* <div className="flex-1 grow flex flex-col items-center justify-center">
         </div> */}
         <div className="relative top-[40px] h-fit">
@@ -255,13 +256,13 @@ const App = () => {
             >
               {marqueeImages.map((image, index) => (
                 <MarqueImage
-                  key={index}
+                  key={`m1-${index}`}
                   image={image}
                 />
               ))}
               {marqueeImages.map((image, index) => (
                 <MarqueImage
-                  key={index}
+                  key={`m2-${index}`}
                   image={image}
                 />
               ))}

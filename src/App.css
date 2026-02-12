@@ -15,12 +15,12 @@
 }
 
 .moment-mask:hover,
-.moment-mask:hover h1 {
+.moment-mask:hover span {
   transform: rotate(0deg);
   transition: all 300ms ease-in-out;
 }
 
-.moment-mask h1 {
+.moment-mask span {
   display: inline-block;
   transform: rotate(-2deg);
 }
