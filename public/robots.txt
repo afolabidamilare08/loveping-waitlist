@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://loveping.app/sitemap.xml
+Sitemap: https://loveping.net/sitemap.xml
 
 # Disallow admin/private areas
 Disallow: /api/
