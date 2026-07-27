@@ -55,7 +55,7 @@ const features = [
     icon: FaGift,
     title: "Meaningful Gift Ideas",
     description:
-      "From spontaneous surprises to planned presents — AI-curated gift suggestions that show you truly care.",
+      "From spontaneous surprises to planned presents, AI-curated gift suggestions that show you truly care.",
     color: "text-[#D7BA38]",
     bg: "bg-yellow-1A",
     border: "border-yellow-1A",
@@ -85,7 +85,7 @@ const steps = [
   {
     number: "03",
     title: "AI-Generated Nudges",
-    description: "Receive timely AI-generated suggestions for messages, gifts, and thoughtful gestures — delivered right when they matter.",
+    description: "Receive timely AI-generated suggestions for messages, gifts, and thoughtful gestures delivered right when they matter.",
   },
 ];
 
@@ -205,30 +205,32 @@ const App = () => {
       {/* NAV */}
       {/* ============================== */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-[#02231A80] backdrop-blur-[50px] border-b border-[#48D96214]">
-        <div className="max-w-6xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
-          <img src="/images/Logo.svg" alt="Loveping" className="h-4 md:h-5" />
-          <a
-            href="#waitlist"
-            className="bg-primary text-secondary text-sm font-medium rounded-full px-5 py-2 hover:opacity-90 transition-opacity"
-          >
-            Join Waitlist
-          </a>
-          <a
-            href="http://t.me/Love_ping_bot"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 border border-primary/30 text-primary text-sm font-medium rounded-full px-5 py-2 hover:bg-primary/10 transition-all"
-          >
-            <FaTelegramPlane /> Test on Telegram
-          </a>
+        <div className="max-w-6xl mx-auto px-4 md:px-6 h-14 md:h-20 flex items-center justify-between gap-1.5">
+          <img src="/images/Logo.svg" alt="Loveping" className="h-3 md:h-5 shrink-0" />
+          <div className="flex items-center gap-1.5 md:gap-3">
+            <a
+              href="#waitlist"
+              className="bg-primary text-secondary text-xs md:text-sm font-medium rounded-full px-3 md:px-5 py-1.5 md:py-2 hover:opacity-90 transition-opacity whitespace-nowrap"
+            >
+              Get Started
+            </a>
+            <a
+              href="http://t.me/Love_ping_bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 border border-primary/30 text-primary text-xs md:text-sm font-medium rounded-full px-3 md:px-5 py-1.5 md:py-2 hover:bg-primary/10 transition-all whitespace-nowrap"
+            >
+              <FaTelegramPlane className="text-xs md:text-sm" /> Test
+            </a>
+          </div>
         </div>
       </nav>
 
       {/* ============================== */}
       {/* HERO */}
       {/* ============================== */}
-      <section className="min-h-screen flex flex-col justify-center pt-20 md:pt-24">
-        <div className="px-6 flex-1 flex items-center justify-center pt-10 md:pt-16">
+      <section className="min-h-screen flex flex-col justify-center pt-14 md:pt-24">
+        <div className="px-4 md:px-6 flex-1 flex items-center justify-center pt-8 md:pt-16">
           <motion.div
             className="space-y-5 lg:space-y-7"
             variants={containerVariants}
@@ -242,13 +244,13 @@ const App = () => {
               variants={itemVariants}
             >
               <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-primary animate-pulse" />
-              <p className="uppercase text-xs md:text-sm font-medium text-white">
-                Still in the kitchen — join the waitlist
+              <p className="uppercase text-[10px] md:text-sm font-medium text-white">
+                Still in the kitchen, join the waitlist
               </p>
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <div className="flex items-center justify-center gap-2 md:gap-3">
+              <div className="flex items-center justify-center gap-2 md:gap-3 flex-wrap">
                 <span className="text-white text-[clamp(1.25rem,5vw,3.125rem)] font-semibold">
                   Never miss the right
                 </span>
@@ -298,7 +300,7 @@ const App = () => {
               className="text-sm lg:text-base font-normal text-[#909090] leading-[21px] text-center max-w-lg mx-auto"
               variants={itemVariants}
             >
-              Loveping uses AI to generate reminders, messages, and gift suggestions — helping
+              Loveping uses AI to generate reminders, messages, and gift suggestions helping
               couples stay connected exactly when it matters.
             </motion.p>
 
@@ -320,7 +322,7 @@ const App = () => {
                     <LuLoaderCircle className="animate-spin" />
                   ) : (
                     <span className="flex items-center gap-2 text-sm font-medium">
-                      Join Waitlist <FaSmile />
+                      Get Started <FaSmile />
                     </span>
                   )}
                 </button>
@@ -510,7 +512,7 @@ const App = () => {
                 <LuLoaderCircle className="animate-spin" />
               ) : (
                 <span className="flex items-center gap-2 text-sm font-medium">
-                  Join Waitlist <FaArrowRight />
+                  Get Started <FaArrowRight />
                 </span>
               )}
             </button>
