@@ -100,7 +100,7 @@ const App = () => {
         setEmail("");
       }
 
-    } catch (error) {
+    } catch {
       toast.error("Failed to add to waitlist - please try again")
     } finally {
       setLoading(false)

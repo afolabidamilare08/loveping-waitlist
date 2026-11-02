@@ -27,6 +27,25 @@ div::-webkit-scrollbar {
   backdrop-filter: blur(50px)
 }
 
+/* Content pages (privacy, terms, FAQ…) scroll normally; the landing page
+   keeps its fixed, non-scrolling layout above. */
+html.page-scroll,
+html.page-scroll body {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html.page-scroll body {
+  -webkit-font-smoothing: antialiased;
+}
+
+html.page-scroll ::selection {
+  background: #48D962;
+  color: #02231A;
+}
+
 
 /* Tailwind CSS v4 Theme Configuration */
 @theme {

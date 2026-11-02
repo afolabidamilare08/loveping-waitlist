@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 .env
 *.env
+
+# pnpm package cache
+.pnpm-store/

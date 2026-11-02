@@ -3,6 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- Content pages live at /privacy/, /terms/ … If a host or dev server
+       serves this landing page for "/privacy" (no trailing slash), send the
+       visitor to the real page before anything renders. -->
+  <script>
+    (function () {
+      var m = location.pathname.match(/^\/(privacy|terms|contact|faq|delete-account)$/);
+      if (m) location.replace("/" + m[1] + "/" + location.search + location.hash);
+    })();
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2YJ3MB1LW"></script>
   <script>
